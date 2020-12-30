@@ -11,8 +11,14 @@ const Main = (props) => {
         className={styles.search}
         placeholder="검색해보세요!" />
       <div>
-        <button className={styles.chip}>현위치</button>
-        <button className={styles.chip}>20/12/31(목)</button>
+        <button className={styles.chip}>
+          <i class="fas fa-street-view"></i>&nbsp;
+          현위치
+        </button>
+        <button className={styles.chip}>
+          <i class="fas fa-calendar-day"></i>&nbsp;
+          20/12/31(목)
+        </button>
       </div>
     </div>
   )
