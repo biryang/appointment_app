@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom";
 import styles from "./app.module.css";
 import Appstore from "./component/appstore/appstore";
 import Footer from "./component/footer/footer";
@@ -8,14 +9,16 @@ import Navbar from './component/navbar/navbar';
 
 function App() {
   return (
-    <div className={styles.app}>
-      <Navbar />
-      <Introduce />
-      {/* <Main />
+    <BrowserRouter>
+      <div className={styles.app}>
+        <Navbar />
+        <Introduce />
+        {/* <Main />
       <Appstore /> */}
-      <Footer />
-      {/* <KakaoMap/> */}
-    </div>
+        <Footer />
+        {/* <KakaoMap/> */}
+      </div>
+    </BrowserRouter>
   );
 }
 
